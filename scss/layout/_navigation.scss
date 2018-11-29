@@ -23,6 +23,8 @@
         }
 
         @include respond(phone) {
+            height: 5rem;
+            width: 5rem;
             top: 3rem;
             right: 3rem;
         }
@@ -45,6 +47,8 @@
         }
 
         @include respond(phone) {
+            height: 4rem;
+            width: 4rem;
             top: 3.5rem;
             right: 3.5rem;
         }
@@ -54,7 +58,7 @@
         height: 100vh;
         position: fixed;
         top: 0;
-        right: 0;
+        left: 0;
         z-index: 1500; // must be in the middle
         opacity: 0;
         width: 0;
@@ -77,7 +81,7 @@
 
     &__link {
         display: inline-block;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 300;
         padding: 1rem 2rem;
         color: $color-white;
@@ -112,6 +116,10 @@
         position: relative;
         margin-top: 3.5rem;
 
+        @include respond(phone){
+            margin-top: 2.5rem;
+        }
+
         &,
         &::before,
         &::after {
@@ -119,6 +127,11 @@
             height: 2px;
             background-color: $color-grey-dark-3;
             display: inline-block;
+
+            @include respond(phone){
+                width: 2rem;
+                height: 1.5px;
+            }
         }
 
         &:before,
@@ -133,10 +146,18 @@
 
         &:before {
             top: -8px;
+
+            @include respond(phone){
+                top: -7px;
+            }
+
         }
 
         &:after {
             top: 8px;
+            @include respond(phone){
+                top: 7px;
+            }
         }
     }
 

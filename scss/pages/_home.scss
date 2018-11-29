@@ -95,6 +95,12 @@
            width: 100%;
         }
 
+        @include respond(phone){
+            padding: 4rem;
+        }
+        
+
+
     }
 
 }
