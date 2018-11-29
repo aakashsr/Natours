@@ -16,6 +16,7 @@
   "author": "Aakash",
   "license": "ISC",
   "dependencies": {
+    "event-stream": "^3.3.4",
     "npm": "^6.4.1"
   },
   "devDependencies": {
